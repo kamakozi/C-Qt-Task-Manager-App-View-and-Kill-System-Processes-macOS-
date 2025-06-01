@@ -5,3 +5,8 @@
 5	247	1748801105629626930	CMakeFiles/taskmanager.dir/BackEnd/Processes/Proceses.cpp.o	af5f215bb4e9d96b
 6	22	1748783415636800688	CMakeFiles/taskmanager.dir/BackEnd/Proccesses/Procceses.cpp.o	ff3ec42302719873
 6	288	1748801551151256817	CMakeFiles/taskmanager.dir/BackEnd/GetProcesses/GetProcesses.cpp.o	444f082e537207f
+6	269	1748802205176971434	CMakeFiles/taskmanager.dir/BackEnd/Processes/Proceses.cpp.o	e1fcb87f4a044416
+6	301	1748802205176863100	CMakeFiles/taskmanager.dir/BackEnd/GetProcesses/GetProcesses.cpp.o	d1f0101c9983a161
+6	574	1748802205176440472	CMakeFiles/taskmanager.dir/FrontEnd/main.cpp.o	8f5d07e3e66e91ba
+6	1234	1748802205176736933	CMakeFiles/taskmanager.dir/FrontEnd/MainWindow/MainWindow.cpp.o	49c29fdffdd99621
+1234	1306	1748802206404723564	taskmanager	744cb9bb8a6a5bdf
