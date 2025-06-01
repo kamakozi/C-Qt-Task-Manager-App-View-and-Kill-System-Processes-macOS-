@@ -1,0 +1,7 @@
+# ninja log v6
+5	589	1748783402650035982	CMakeFiles/taskmanager.dir/FrontEnd/main.cpp.o	f4f5bcfdb8d74ffb
+1162	1237	1748801661637968314	taskmanager	744cb9bb8a6a5bdf
+6	1161	1748801660482227694	CMakeFiles/taskmanager.dir/FrontEnd/MainWindow/MainWindow.cpp.o	e375857626023ba5
+5	247	1748801105629626930	CMakeFiles/taskmanager.dir/BackEnd/Processes/Proceses.cpp.o	af5f215bb4e9d96b
+6	22	1748783415636800688	CMakeFiles/taskmanager.dir/BackEnd/Proccesses/Procceses.cpp.o	ff3ec42302719873
+6	288	1748801551151256817	CMakeFiles/taskmanager.dir/BackEnd/GetProcesses/GetProcesses.cpp.o	444f082e537207f

@@ -1,0 +1,3 @@
+/Users/zigazoric/Desktop/cpp/TaskManager/cmake-build-debug/CMakeFiles/taskmanager.dir
+/Users/zigazoric/Desktop/cpp/TaskManager/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/zigazoric/Desktop/cpp/TaskManager/cmake-build-debug/CMakeFiles/rebuild_cache.dir
