@@ -3,6 +3,9 @@
 A modern system-level task manager app built using **C++17**, **Qt6**, and **macOS sysctl** system calls. Displays all running processes with PID and name, and allows you to stop (kill) them directly from the GUI.
 
 ---
+## 📽️ Demo
+
+[▶️ Watch Demo Video](demo.mp4)
 
 ##  Features
 
