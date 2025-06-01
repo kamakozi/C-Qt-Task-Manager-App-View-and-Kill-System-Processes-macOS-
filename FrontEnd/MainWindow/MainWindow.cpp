@@ -5,6 +5,7 @@
 #include <iostream>
 #include <signal.h>
 #include <unistd.h>
+#include <QMessageBox>
 #include "../../BackEnd/GetProcesses/GetProcesses.h"
 
 QWidget* MainWindow::createWindow() {
@@ -14,11 +15,19 @@ QWidget* MainWindow::createWindow() {
 
     QVBoxLayout *layout = new QVBoxLayout;
 
+
+    QLineEdit* searchTask = new QLineEdit();
+    searchTask->setPlaceholderText("Search by PID or name");
+    layout->addWidget(searchTask);
+
+
     QTableWidget *table = new QTableWidget;
     table->setColumnCount(3);
     table->setHorizontalHeaderLabels({"PID", "Name", "Action"});
     table->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     table->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    layout->addWidget(table);
+
 
     GetProcesses gp;
     auto listOfTasks = gp.get_process();
@@ -35,10 +44,11 @@ QWidget* MainWindow::createWindow() {
 
         QPushButton *deleteButton = new QPushButton("Stop");
 
-        QObject::connect(deleteButton, &QPushButton::clicked, [pId]() {
+        QObject::connect(deleteButton, &QPushButton::clicked, [pId, table]() {
             if (kill(pId, SIGKILL) == 0) {
                 std::cout << "Killed " << pId << "\n";
             } else {
+                QMessageBox::critical(table, "Permission denied!", "Please run app in sudo: No permission error!");
                 perror("Failed to kill");
             }
         });
@@ -47,8 +57,18 @@ QWidget* MainWindow::createWindow() {
         ++row;
     }
 
-    layout->addWidget(table);
-    window->setLayout(layout);
+    QObject::connect(searchTask, &QLineEdit::textChanged, [table](const QString &text) {
+        for (int i = 0; i < table->rowCount(); ++i) {
+            QString pidText = table->item(i, 0)->text();
+            QString nameText = table->item(i, 1)->text();
 
+            bool match = pidText.contains(text, Qt::CaseInsensitive) ||
+                         nameText.contains(text, Qt::CaseInsensitive);
+
+            table->setRowHidden(i, !match);
+        }
+    });
+
+    window->setLayout(layout);
     return window;
 }

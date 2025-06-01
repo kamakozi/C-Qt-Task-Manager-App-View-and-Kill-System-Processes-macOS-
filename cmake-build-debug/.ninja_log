@@ -10,3 +10,14 @@
 6	574	1748802205176440472	CMakeFiles/taskmanager.dir/FrontEnd/main.cpp.o	8f5d07e3e66e91ba
 6	1234	1748802205176736933	CMakeFiles/taskmanager.dir/FrontEnd/MainWindow/MainWindow.cpp.o	49c29fdffdd99621
 1234	1306	1748802206404723564	taskmanager	744cb9bb8a6a5bdf
+3	292	1748803123185943900	CMakeFiles/taskmanager.dir/BackEnd/Processes/Proceses.cpp.o	e1fcb87f4a044416
+3	332	1748803123185833904	CMakeFiles/taskmanager.dir/BackEnd/GetProcesses/GetProcesses.cpp.o	d1f0101c9983a161
+2	631	1748803123185421041	CMakeFiles/taskmanager.dir/FrontEnd/main.cpp.o	8f5d07e3e66e91ba
+3	1317	1748803123185701158	CMakeFiles/taskmanager.dir/FrontEnd/MainWindow/MainWindow.cpp.o	49c29fdffdd99621
+1318	1395	1748803124500506597	taskmanager	744cb9bb8a6a5bdf
+7	1189	1748803428164557417	CMakeFiles/taskmanager.dir/FrontEnd/MainWindow/MainWindow.cpp.o	49c29fdffdd99621
+1189	1262	1748803429346237976	taskmanager	744cb9bb8a6a5bdf
+6	1197	1748803468023166690	CMakeFiles/taskmanager.dir/FrontEnd/MainWindow/MainWindow.cpp.o	49c29fdffdd99621
+1197	1270	1748803469214058278	taskmanager	744cb9bb8a6a5bdf
+6	1203	1748804163429779910	CMakeFiles/taskmanager.dir/FrontEnd/MainWindow/MainWindow.cpp.o	49c29fdffdd99621
+1203	1276	1748804164626762829	taskmanager	744cb9bb8a6a5bdf
