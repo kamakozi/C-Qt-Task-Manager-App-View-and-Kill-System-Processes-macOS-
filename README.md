@@ -16,6 +16,7 @@ A modern system-level task manager app built using **C++17**, **Qt6**, and **mac
 -  **Clean MVC-like Architecture**
 -  **Error logging** to `Logs.txt` for sysctl failures
 -  **macOS ARM64 compatible**
+-  **Search/filter for process names**
 
 ---
 
@@ -72,7 +73,6 @@ cmake --build build
 ##  Next Goals
 
 -  Auto-refresh process list
--  Search/filter for process names
 -  Double-click row for more task details (CPU%, Memory)
 -  Add unit tests
 
